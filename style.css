@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --font:"Nunito Sans", sans-serif;
+    
+
+    /* primary colors */
+
+    --Very-Dark-Blue-Text: hsl(200, 15%, 8%);
+    --Dark-Gray-Input: hsl(0, 0%, 52%);
+
+    /* secondary colors  */
+
+    --White: hsl(0, 0%, 100%);
+    --Very-Light-Gray-Background: hsl(0, 0%, 98%);
+    
+}
+
+body{
+    background-color: var(--Very-Light-Gray-Background);
+    font-family: var(--font);
+    color: var(--Very-Dark-Blue-Text);
+    max-width: 1440px;
+}
+
+header{
+    background-color: var(--White);
+}
+.top-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.4rem;
+    box-shadow: 0px 2px 2px rgb(196, 196, 196);
+    margin-bottom: 2rem;
+}
+.text{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+#toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#toggle i{
+    color: var(--Very-Dark-Blue-Text);
+    font-weight: 500;
+    font-size: 1rem;
+    transform: rotate(-10deg);
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.4rem;
+    align-items: center;
+
+}
+#inp-word{
+    width:45%;
+    display: flex;
+    border: 1px solid var(--Very-Light-Gray-Background);
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px hsl(0, 0%, 83%);
+    padding: 2px;
+    color: var(--Very-Dark-Blue-Text);
+}
+.search form input{
+    width: 80%;
+    outline: none;
+    border: none;
+    fill: none;
+    border-radius: inherit;
+    color: var(--Very-Dark-Blue-Text);
+    background: var(--White);
+    padding: 10px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+.search form button{
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: var(--White);
+    width: 20%;
+    color: var(--Very-Dark-Blue-Text);
+    box-shadow: 1px px 8px hsl(0, 0%, 83%);
+    opacity: 0.7;
+}
+.search form button:hover{
+    opacity: 1;
+}
+.search form input:hover{
+    opacity: 1;
+}
+.dropdwn{
+    width: 25%;
+}
+.dropdwn select{
+    width:100%;
+    outline: none;
+    border: none;
+    fill: none;
+    border-radius: 5px;
+    color: var(--Very-Dark-Blue-Text);
+    background: var(--White);
+    padding: 20px 20px;
+    font-size: 14px;
+    
+}
+
