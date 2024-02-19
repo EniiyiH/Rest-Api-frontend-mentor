@@ -90,6 +90,7 @@ header{
     padding: 10px;
     font-size: 14px;
     opacity: 0.7;
+    overflow: hidden;
 }
 .search form button{
     outline: none;
@@ -100,6 +101,7 @@ header{
     color: var(--Very-Dark-Blue-Text);
     box-shadow: 1px px 8px hsl(0, 0%, 83%);
     opacity: 0.7;
+    overflow: hidden;
 }
 .search form button:hover{
     opacity: 1;
@@ -118,7 +120,7 @@ header{
     border-radius: 5px;
     color: var(--Very-Dark-Blue-Text);
     background: var(--White);
-    padding: 20px 20px;
+    padding: 15px;
     font-size: 14px;
     
 }
