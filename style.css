@@ -68,6 +68,8 @@ header{
     width: 100%;
     padding: 1.4rem;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 
 }
 #inp-word{
@@ -122,5 +124,44 @@ header{
     background: var(--White);
     padding: 15px;
     font-size: 14px;   
+    z-index: 1;
+}
+main{
+    min-height: 100vh;
+    background-color: var(--Very-Light-Gray-Background);
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    grid-gap: 50px; 
+    margin: 50px auto;
+    max-width: 1440px;
+    padding: 20px;
+}
+.card-item{
+    border-radius: 7px;
+    background-color: var(--White);
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+    opacity: .98;
+
+}
+.card-item:hover{
+    opacity: 1;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+}
+.image-container{
+    margin-bottom: .5rem;
+}
+.card img{
+    width: 100%;
 }
 
+.card-details{
+    padding: 10px;
+    color: var(--Very-Dark-Blue-Text);
+}
+.card-details h1{
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
