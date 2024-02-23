@@ -22,16 +22,17 @@
         <nav class="search">
            <form id="inp-word"> 
                <button type="submit" id="submit"><i class="fa fa-search"></i></button>
-                <input type="search" placeholder="Search for a country.." id="search-val">
+                <input type="search" placeholder="Search for a country.." id="search-val" required>
            </form>
            <div class="dropdwn">
-                <select name="cars" id="cars">
+                <select name="filter" id="filter" onchange="filter()">
                     <option value="" selected disabled hidden>Filter by Region</option>
-                    <option value="Africa" class="btm">Africa</option>
-                    <option value="America" class="btm">America</option >
+                    <option value="All">All</option>
+                    <option value="Africa" class="btm" >Africa</option>
+                    <option value="America" class="btm" onclick="filter()">America</option >
                     <option value="Asia"  class="btm">Asia</option>
                     <option value="Europe" class="btm">Europe</option>
-                    <option value="Oceania">Oceania</option>
+                    <option value="Oceania" class="btm">Oceania</option>
                 </select>
             </div>
           
@@ -48,6 +49,6 @@
 
        
 
-    <script src="/script.js"></script>
+    <script src="/script.js" defer></script>
 </body>
 </html>

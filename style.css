@@ -40,7 +40,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.4rem;
-    box-shadow: 0px 0px 5px rgb(196, 196, 196);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
     margin-bottom: 2rem;
 }
 .text{
@@ -189,6 +189,29 @@ main{
 }
 
 
+.error{
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: var(--White);
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+    max-width: 800px;
+    max-height: 100vh;
+}
+.error-image{
+    width: 60%;
+    height: 60%;
+}
+.error-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.error-details{
+    font-size: 20px;
+    font-weight: 800px;
+    color: var(--Very-Dark-Blue-Text);
+}
 @media(max-width:650px){
     .card{
         justify-content: center;
@@ -204,12 +227,3 @@ main{
         width: 70%;
     }
 }
-/* @media(max-width:400){
-   
- .dropdwn{
-        width: 90%;
-    }
-    .dropdwn select{
-        padding: 0px;
-    }
-} */
