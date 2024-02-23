@@ -23,7 +23,7 @@ function createCard(data){
             <p><b>Languages: </b>${JSON.stringify(data[0].languages)}</p>
         </div>
         <div class="border-countries">
-            <h3>Border Countries:</h3>
+            <p><b>Border Countries:</b></p>
             <a href="#"> <button>France</button></a>
             <a href="#"> <button>Germany</button></a>
             <a href="#"> <button>Netherlands</button></a>
