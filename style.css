@@ -21,6 +21,10 @@
 
     --White: hsl(0, 0%, 100%);
     --Very-Light-Gray-Background: hsl(0, 0%, 98%);
+
+    --Dark-Blue-Dark-Mode-Elements: hsl(209, 23%, 22%);
+
+    --Very-Dark-Blue-Dark-Mode-Background: hsl(207, 26%, 17%);
     
 }
 
@@ -28,11 +32,23 @@ body{
     background-color: var(--Very-Light-Gray-Background);
     font-family: var(--font);
     color: var(--Very-Dark-Blue-Text);
-    max-width: 1440px;
+    max-width: 1600px;
 }
+
+.dark-body{
+    background-color: var(--Very-Dark-Blue-Dark-Mode-Background) !important;
+    color:var(--White) !important;
+}
+.dark-elements{
+    background-color: var(--Dark-Blue-Dark-Mode-Elements) !important;
+    color: var(--White) !important;
+}
+
+
 
 header{
     background-color: var(--White);
+    width: 100%;
 }
 .top-nav{
     width: 100%;
@@ -81,28 +97,37 @@ header{
     padding: 2px;
     color: var(--Very-Dark-Blue-Text);
 }
+.inp-word-dark{
+    color: var(--White) !important;
+    border: 1px solid var(--Dark-Blue-Dark-Mode-Elements) !important;
+    box-shadow: 1px 1px 8px #01011d !important;
+}
+
+.inp-dark{
+    color: var(--White) !important;
+    background-color: var(--Dark-Blue-Dark-Mode-Elements) !important;
+}
+
 .search form input{
     width: 80%;
     outline: none;
     border: none;
     fill: none;
-    border-radius: inherit;
     color: var(--Very-Dark-Blue-Text);
     background: var(--White);
     padding: 10px;
     font-size: 14px;
-    opacity: 0.7;
+    opacity: 0.9;
     overflow: hidden;
 }
 .search form button{
     outline: none;
     border: 1px solid transparent;
-    border-radius: inherit;
     background: var(--White);
     width: 20%;
     color: var(--Very-Dark-Blue-Text);
     box-shadow: 1px px 8px hsl(0, 0%, 83%);
-    opacity: 0.7;
+    opacity: 0.9;
     overflow: hidden;
 }
 .search form button:hover{
@@ -139,48 +164,42 @@ main{
     max-width: 1440px;
     padding: 20px;
     justify-content: space-evenly;
+    color: var(--Very-Dark-Blue-Text);
 }
 
 .card a{
     text-decoration: none;
     border-radius: 7px;
-    background-color: var(--White);
     box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
     width: 250px;
-    min-height: 300px;
+    max-height: 300px;
     transition: all .3s ease-in-out;
+    color: inherit;
+    background-color: var(--White);
 }
-/* .card-item{
-    border-radius: 7px;
-    background-color: var(--White);
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
-    width: 250px;
-    height: 300px;
-    transition: all .3s ease-in-out;
-} */
+
 .card a:hover{
     transform: scale(1.09);
     box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
 }
-/* .card-item:hover{
-    transform: scale(1.09);
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
-} */
+
 .image-container{
     margin-bottom: .5rem;
-    height:150px ;
-    border-radius: 7px;
+    height:150px;
 }
 .card img{
     width: 100%;
     height: 100%;
-    border-radius: 7px;
     object-fit: cover;
 }
-
+.cardItem{
+    background-color: inherit;
+    border-radius: inherit;
+    color: inherit;
+}
 .card-details{
     padding: 10px;
-    color: var(--Very-Dark-Blue-Text);
+    
 }
 .card-details h1{
     font-weight: 800;
@@ -192,8 +211,8 @@ main{
 .error{
     text-decoration: none;
     border-radius: 7px;
-    background-color: var(--White);
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+    /* background-color: var(--White); */
+    box-shadow: 0px 5px 5px var(--Dark-Blue-Dark-Mode-Elements);
     max-width: 800px;
     max-height: 100vh;
 }

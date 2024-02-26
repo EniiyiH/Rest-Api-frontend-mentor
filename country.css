@@ -27,7 +27,8 @@ body{
     background-color: var(--Very-Light-Gray-Background);
     font-family: var(--font);
     color: var(--Very-Dark-Blue-Text);
-    max-width: 1440px;
+    max-width: 1500px;
+ 
 }
 
 .section{
@@ -88,24 +89,34 @@ body{
     max-height: 150px;
     flex-wrap: wrap;
     row-gap: 12px;
-    column-gap: 52px;
+    column-gap: 40px;
 }
 
 .border-countries{
     display: flex;
     gap: .9rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 .border-countries a{
-    max-width: max-content;
+    max-width: fit-content;
     text-decoration: none;
     margin-right: 12px;
     font-family: var(--font);
     font-size: 18px;
     font-weight: 500;
+    padding: 4px 24px;
+    background-color: var(--White);
+    outline: none;
+    fill: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+    transition: all .2s ease-out;
+    cursor:default;
 }
 
-.border-countries a button{
+/* .border-countries a button{
     padding: 4px 24px;
     background-color: var(--White);
     outline: none;
@@ -115,23 +126,32 @@ body{
     box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
     cursor: pointer;
     transition: all .2s ease-out;
-}
-.border-countries a button:hover{
+} */
+/* .border-countries a:hover{
     box-shadow: 0px 0px 7px rgba(0,0,0,0.3);
     transform: scale(1.1);
-}
+} */
+@media(max-width:1127px){
+    .country-detail-text{
+        display: flex;
+        flex-direction: row;
+        row-gap: 1rem;
+        column-gap: 42px;
 
+    }
+
+}
 @media(max-width:810px){
     .country-detail-text{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         max-height: 250px;
-        row-gap: 12px;
-        column-gap: 30px;
+        row-gap: 20px;
+        column-gap: 52px;
     }
     .country-details img{
-        width: 35%;
+        width: 40%;
     }
   
 
@@ -143,13 +163,20 @@ body{
         align-items: flex-start;
         justify-content: center;
         
+    }
+    .country-detail{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .country-detail-text{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 16px;
+        margin-bottom:4em;
         
     }
     .country-details img{
-        width: 90%;
-    }
-    .country-detail-text{
-       max-height:300px;
-       
+        width: 100%;
     }
 }

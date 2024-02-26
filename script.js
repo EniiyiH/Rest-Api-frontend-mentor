@@ -63,7 +63,7 @@ form.addEventListener("submit",(e)=>{
                  <img src="${data[0].flags.png}" alt="${data[0].flags.alt}">       
                 </div>
                 <div class="card-details">
-                    <h1> ${data[0].name.common}</h1>
+                    <h1 class="h1"> ${data[0].name.common}</h1>
                     <p class="population"><strong>Population:</strong> ${data[0].population}</p>
                     <p class="region"><strong>Region: </strong>${data[0].region}</p>
                     <p class="capital"><strong>Capital:</strong>${data[0].capital}</p>         
