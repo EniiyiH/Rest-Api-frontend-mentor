@@ -37,7 +37,6 @@ function showCountry(country){
                 <p class="capital"><strong>Capital:</strong>${country.capital}</p>         
             </div>
         </div>
-         
         `
         card.appendChild(cardLink)
 }
@@ -92,7 +91,7 @@ form.addEventListener("submit",(e)=>{
              
             `
             card.appendChild(cardLink)
-            console.log(data)
+            // console.log(data)
         }
     }).catch(error=>{
         Error,error})

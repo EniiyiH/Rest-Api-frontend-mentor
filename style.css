@@ -35,14 +35,14 @@ body{
     max-width: 1600px;
 }
 
-.dark-body{
+/* .dark-body{
     background-color: var(--Very-Dark-Blue-Dark-Mode-Background) !important;
     color:var(--White) !important;
 }
 .dark-elements{
     background-color: var(--Dark-Blue-Dark-Mode-Elements) !important;
     color: var(--White) !important;
-}
+} */
 
 
 
@@ -97,7 +97,7 @@ header{
     padding: 2px;
     color: var(--Very-Dark-Blue-Text);
 }
-.inp-word-dark{
+/* .inp-word-dark{
     color: var(--White) !important;
     border: 1px solid var(--Dark-Blue-Dark-Mode-Elements) !important;
     box-shadow: 1px 1px 8px #01011d !important;
@@ -106,7 +106,7 @@ header{
 .inp-dark{
     color: var(--White) !important;
     background-color: var(--Dark-Blue-Dark-Mode-Elements) !important;
-}
+} */
 
 .search form input{
     width: 80%;
@@ -151,7 +151,7 @@ header{
     font-size: 14px;   
 }
 main{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: var(--Very-Light-Gray-Background);
 }
 
